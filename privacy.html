@@ -8,55 +8,94 @@
 </head>
 <body>
 <div class="page">
-  <div class="container">
-    <header class="header">
-      <div class="brand">
-        <div class="logo">L</div>
-        <div>
-          <div class="brand-text-title">Lume</div>
-          <div class="brand-text-sub">Privacy & data use</div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html#top" class="brand">
+        <div class="brand-mark">L</div>
+        <div class="brand-text">
+          <span class="brand-name">Lume</span>
+          <span class="brand-tagline">Your wellness, all in one place.</span>
         </div>
-      </div>
+      </a>
       <nav class="nav">
-        <a href="index.html#hero">Home</a>
         <a href="index.html#features">Features</a>
-        <a href="index.html#community">Challenges</a>
+        <a href="index.html#screens">Screens</a>
+        <a href="index.html#challenges">Challenges</a>
         <a href="privacy.html">Privacy</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero-wrap">
-        <div class="hero">
-          <div class="hero-copy">
-            <div class="hero-copy-eyebrow">Your data, your choice</div>
-            <h1>Privacy is a core feature, not an afterthought.</h1>
-            <p>This page explains how Lume handles your data in clear, human language. Update it as your product evolves or when you publish your official privacy policy.</p>
-          </div>
+  <main>
+    <section class="section section-light">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Privacy</p>
+          <h2>How Lume treats your data.</h2>
+          <p class="section-sub">
+            This is a human‑readable summary you can keep while you work on a full legal policy.
+            Replace it with your official text when you’re ready.
+          </p>
+        </header>
+
+        <div class="feature-grid" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+          <article class="feature-card">
+            <h3>What we collect</h3>
+            <p>
+              Lume may access data you choose to share, such as step counts, activity,
+              and other health metrics from HealthKit, along with basic app usage analytics.
+            </p>
+            <p>
+              We also store information you provide directly, like challenge names, goals, and friend connections.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>How we use it</h3>
+            <p>
+              Your data is used to power core features: showing trends, challenges, reminders,
+              and insights about your movement, sleep, and water intake.
+            </p>
+            <p>
+              We do not sell your personal data to third parties.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Sharing & friends</h3>
+            <p>
+              When you join challenges or add friends, Lume may share limited activity stats
+              (like steps or challenge progress) with the people you connect with. We never share
+              sensitive details such as exact locations.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Your choices</h3>
+            <p>
+              You can disable permissions (including HealthKit access) at any time in iOS Settings.
+              If you uninstall the app, locally stored data is removed from your device.
+            </p>
+            <p>
+              For account or data questions, contact your support email and we’ll help.
+            </p>
+          </article>
         </div>
-      </section>
 
-      <section class="feature-tabs">
-        <div class="section-label">Overview</div>
-        <h2 class="section-title">How Lume uses your information</h2>
-        <p class="section-sub">Replace this with your formal policy, but these are good starter points.</p>
+        <p style="font-size:13px;color:var(--warm-espresso);margin-top:18px;max-width:40rem;">
+          <strong>Note:</strong> This page is not legal advice. For App Store submission, you should replace this
+          copy with a full privacy policy reviewed by a professional or generated from a reputable template.
+        </p>
+      </div>
+    </section>
+  </main>
 
-        <ul style="padding-left:18px;font-size:14px;color:var(--warm-espresso);">
-          <li>Lume uses your health data only to show metrics, trends, and insights inside the app.</li>
-          <li>Your data is never sold to third parties.</li>
-          <li>Challenges and friend features only share activity metrics with the people you connect with.</li>
-          <li>You can disconnect permissions (such as HealthKit) at any time in iOS Settings.</li>
-          <li>If you contact support, we only use your email and details to help with your request.</li>
-        </ul>
-
-        <p style="font-size:13px;color:var(--warm-espresso);margin-top:12px;">This page is not legal advice. When you’re ready, replace this content with the full text of your official privacy policy from your lawyer or template provider.</p>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div>© 2025 Lume · <a href="index.html#hero">Back to home</a></div>
-    </footer>
-  </div>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2025 Lume</span>
+      <a href="index.html#top">Back to home</a>
+    </div>
+  </footer>
 </div>
 </body>
 </html>
