@@ -1,4 +1,3 @@
-/* ORIGINAL FILE + SAFE ADDITION */
 :root {
   /* Palette */
   --soft-coral-amber: #E7A684;
@@ -549,10 +548,10 @@ body {
 }
 
 
-/* SAFE logo override */
+/* Genie logo override (safe) */
 .brand-mark {
   background: none !important;
-  padding: 0;
+  color: transparent;
 }
 
 .brand-mark img {
