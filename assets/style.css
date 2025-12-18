@@ -1,3 +1,4 @@
+/* ORIGINAL FILE + SAFE ADDITION */
 :root {
   /* Palette */
   --soft-coral-amber: #E7A684;
@@ -545,4 +546,18 @@ body {
   .hero-shot {
     width: 230px;
   }
+}
+
+
+/* SAFE logo override */
+.brand-mark {
+  background: none !important;
+  padding: 0;
+}
+
+.brand-mark img {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  object-fit: contain;
 }
