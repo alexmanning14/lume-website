@@ -912,6 +912,23 @@ section { padding: 100px 0; }
    ═══════════════════════════════ */
 
 @media (max-width: 900px) {
+  .header-inner {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    gap: 8px;
+  }
+  .nav {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero {
+    padding-top: 120px;
+  }
+  .page-simple {
+    padding-top: 140px;
+  }
   .hero-inner {
     grid-template-columns: 1fr;
     text-align: center;
@@ -942,18 +959,7 @@ section { padding: 100px 0; }
 
 @media (max-width: 640px) {
   section { padding: 64px 0; }
-  .hero { min-height: auto; padding: 120px 0 60px; }
-  .header-inner {
-    height: auto;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
-    gap: 8px;
-  }
-  .nav {
-    width: 100%;
-    justify-content: center;
-  }
+  .hero { min-height: auto; }
   .nav a { font-size: 13px; padding: 5px 10px; }
   .feature-grid { grid-template-columns: 1fr; }
   .hero-form { flex-direction: column; }
@@ -963,5 +969,4 @@ section { padding: 100px 0; }
   .hero-pair { width: 340px; border-radius: 12px; }
   .footer-inner { flex-direction: column; gap: 12px; text-align: center; }
   .hero-links { flex-direction: column; align-items: center; }
-  .page-simple { padding-top: 140px; }
 }
