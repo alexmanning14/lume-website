@@ -513,19 +513,25 @@ img { display: block; max-width: 100%; }
 .hero-pair {
   position: relative;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   gap: 0;
-  border-radius: 20px;
+  border-radius: 16px;
   overflow: hidden;
   box-shadow:
-    0 30px 80px rgba(0,0,0,0.14),
-    0 10px 30px rgba(0,0,0,0.08);
+    0 24px 60px rgba(0,0,0,0.12),
+    0 8px 20px rgba(0,0,0,0.08);
   animation: float 6s ease-in-out infinite;
   transition: transform 0.15s ease-out;
-  max-width: 420px;
+  width: 380px;
+  max-width: 100%;
 }
 
 .hero-pair img {
+  flex: 0 0 50%;
   width: 50%;
+  min-width: 0;
+  height: auto;
   display: block;
   object-fit: cover;
 }
@@ -536,6 +542,7 @@ img { display: block; max-width: 100%; }
   background: radial-gradient(ellipse at center, rgba(79,196,176,0.15) 0%, transparent 70%);
   z-index: -1;
   animation: pulseGlow 4s ease-in-out infinite;
+  pointer-events: none;
 }
 
 /* ═══════════════════════════════
@@ -895,7 +902,7 @@ section { padding: 100px 0; }
   .feature-grid { grid-template-columns: 1fr 1fr; }
   .phone-mockup { width: 200px; }
   .showcase-phone { width: 170px; }
-  .hero-pair { max-width: 360px; }
+  .hero-pair { width: 340px; }
 }
 
 @media (max-width: 640px) {
@@ -908,7 +915,7 @@ section { padding: 100px 0; }
   .hero-form button { width: 100%; }
   .phone-mockup { width: 180px; }
   .showcase-phone { width: 160px; }
-  .hero-pair { max-width: 300px; border-radius: 14px; }
+  .hero-pair { width: 280px; border-radius: 12px; }
   .footer-inner { flex-direction: column; gap: 12px; text-align: center; }
   .hero-links { flex-direction: column; align-items: center; }
 }
