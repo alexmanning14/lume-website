@@ -927,6 +927,8 @@ section { padding: 100px 0; }
     gap: 2px;
   }
   .hero {
+    min-height: auto !important;
+    align-items: flex-start !important;
     padding-top: 150px !important;
   }
   .has-banner .hero {
