@@ -171,6 +171,41 @@ img { display: block; max-width: 100%; }
 .stagger.visible > *:nth-child(6) { transition-delay: 0.5s; opacity: 1; transform: translateY(0); }
 
 /* ═══════════════════════════════
+   TRIAL BANNER
+   ═══════════════════════════════ */
+
+.trial-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 110;
+  background: linear-gradient(90deg, var(--gray-900), #2a2522);
+  text-align: center;
+  padding: 10px 16px;
+}
+
+.trial-banner a {
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: opacity 0.2s;
+}
+
+.trial-banner a:hover {
+  opacity: 0.85;
+}
+
+.has-banner .site-header {
+  top: 38px;
+}
+
+.has-banner .hero {
+  padding-top: 102px;
+}
+
+/* ═══════════════════════════════
    HEADER
    ═══════════════════════════════ */
 
