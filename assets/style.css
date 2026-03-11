@@ -202,7 +202,13 @@ img { display: block; max-width: 100%; }
 }
 
 .has-banner .hero {
-  padding-top: 102px;
+  padding-top: 110px;
+}
+
+@media (max-width: 900px) {
+  .has-banner .hero {
+    padding-top: 160px;
+  }
 }
 
 /* ═══════════════════════════════
