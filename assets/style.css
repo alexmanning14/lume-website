@@ -462,7 +462,7 @@ img { display: block; max-width: 100%; }
 
 .phone-mockup {
   position: relative;
-  width: 280px;
+  width: 320px;
   animation: float 6s ease-in-out infinite;
 }
 
@@ -520,7 +520,7 @@ img { display: block; max-width: 100%; }
 .hero-pair {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 380px;
+  width: 440px;
   border-radius: 16px;
   overflow: hidden;
   box-shadow:
@@ -600,7 +600,7 @@ section { padding: 100px 0; }
 }
 
 .showcase-phone {
-  width: 260px;
+  width: 300px;
   border-radius: 32px;
   overflow: hidden;
   box-shadow:
@@ -899,9 +899,9 @@ section { padding: 100px 0; }
   .showcase-tags { justify-content: center; }
 
   .feature-grid { grid-template-columns: 1fr 1fr; }
-  .phone-mockup { width: 240px; }
-  .showcase-phone { width: 220px; }
-  .hero-pair { width: 340px; }
+  .phone-mockup { width: 270px; }
+  .showcase-phone { width: 250px; }
+  .hero-pair { width: 390px; }
 }
 
 @media (max-width: 640px) {
@@ -912,9 +912,9 @@ section { padding: 100px 0; }
   .feature-grid { grid-template-columns: 1fr; }
   .hero-form { flex-direction: column; }
   .hero-form button { width: 100%; }
-  .phone-mockup { width: 220px; }
-  .showcase-phone { width: 200px; }
-  .hero-pair { width: 300px; border-radius: 12px; }
+  .phone-mockup { width: 250px; }
+  .showcase-phone { width: 230px; }
+  .hero-pair { width: 340px; border-radius: 12px; }
   .footer-inner { flex-direction: column; gap: 12px; text-align: center; }
   .hero-links { flex-direction: column; align-items: center; }
 }
