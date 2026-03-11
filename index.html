@@ -58,18 +58,15 @@
             </a>
           </div>
 
-          <p class="hero-note">Free on iPhone &middot; Apple Watch, Oura, Garmin &amp; Whoop</p>
+          <p class="hero-note">Free on iPhone &middot; Works with Apple Watch, Oura, Garmin &amp; Whoop</p>
         </div>
 
-        <!-- Phone mockup -->
+        <!-- Hero paired screenshots -->
         <div class="hero-phone">
-          <div class="phone-mockup">
-            <div class="phone-glow"></div>
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <img src="assets/screenshot-visualize.png" alt="Lume wellness dashboard" />
-              </div>
-            </div>
+          <div class="hero-pair">
+            <div class="hero-pair-glow"></div>
+            <img src="assets/screenshot-visualize.png" alt="Lume — Visualize Your Wellness" />
+            <img src="assets/screenshot-science.png" alt="Lume — Science-Backed Suggestions" />
           </div>
         </div>
 
@@ -146,27 +143,6 @@
           </div>
         </div>
 
-        <!-- 4. Science Backed -->
-        <div class="showcase-item">
-          <div class="showcase-text reveal-right">
-            <span class="section-label">Science-Backed</span>
-            <h3>Suggestions that actually help.</h3>
-            <p>
-              Get personalized suggestions based on your data and backed by research.
-              Lume connects with your devices to give you a complete picture of your health.
-            </p>
-            <div class="showcase-tags">
-              <span class="showcase-tag">HealthKit Sync</span>
-              <span class="showcase-tag">Smart Suggestions</span>
-              <span class="showcase-tag">Weather Aware</span>
-            </div>
-          </div>
-          <div class="showcase-visual reveal-left">
-            <div class="showcase-phone">
-              <img src="assets/screenshot-science.png" alt="Science-backed suggestions" />
-            </div>
-          </div>
-        </div>
 
       </div>
     </section>
@@ -259,13 +235,13 @@
       observer.observe(el);
     });
 
-    // Parallax on hero phone
-    const heroPhone = document.querySelector('.phone-mockup');
-    if (heroPhone && window.innerWidth > 900) {
+    // Parallax on hero pair
+    const heroPair = document.querySelector('.hero-pair');
+    if (heroPair && window.innerWidth > 900) {
       window.addEventListener('mousemove', (e) => {
-        const x = (e.clientX / window.innerWidth - 0.5) * 12;
-        const y = (e.clientY / window.innerHeight - 0.5) * 12;
-        heroPhone.style.transform = `perspective(1000px) rotateY(${x}deg) rotateX(${-y}deg)`;
+        const x = (e.clientX / window.innerWidth - 0.5) * 8;
+        const y = (e.clientY / window.innerHeight - 0.5) * 8;
+        heroPair.style.transform = `perspective(1000px) rotateY(${x}deg) rotateX(${-y}deg)`;
       }, { passive: true });
     }
 
