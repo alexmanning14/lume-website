@@ -227,6 +227,7 @@ img { display: block; max-width: 100%; }
   align-items: center;
   justify-content: space-between;
   height: 64px;
+  flex-wrap: wrap;
 }
 
 .brand {
@@ -913,15 +914,16 @@ section { padding: 100px 0; }
 
 @media (max-width: 900px) {
   .header-inner {
-    height: auto;
-    flex-direction: column;
+    height: auto !important;
+    flex-direction: column !important;
     align-items: center;
-    padding: 10px 0;
+    padding: 12px 0;
     gap: 8px;
   }
   .nav {
     width: 100%;
     justify-content: center;
+    gap: 2px;
   }
   .hero {
     padding-top: 120px;
