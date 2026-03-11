@@ -20,7 +20,7 @@
       </a>
       <nav class="nav">
         <a href="#features">Features</a>
-        <a href="#screenshots">Screenshots</a>
+        <a href="#showcase">Screenshots</a>
         <a href="about.html">About</a>
         <a href="privacy.html">Privacy</a>
       </nav>
@@ -29,117 +29,203 @@
 
   <main>
 
-    <!-- Hero -->
+    <!-- ═══ HERO ═══ -->
     <section class="hero" id="top">
-      <div class="container">
-        <span class="hero-badge">App of the Day</span>
-        <img src="assets/icon.png" alt="Lume app icon" class="hero-icon" />
-        <h1>Visualize your wellness.</h1>
-        <p class="hero-sub">
-          Track steps, sleep, water, and mindfulness in one calm place.
-          Science-backed suggestions. AI-powered trends. Beautiful design.
-        </p>
-        <div class="hero-ctas">
-          <a href="https://apps.apple.com/us/app/lume-health-wellness/id6753306585" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-            Download on the App Store
-          </a>
-          <a href="#signup" class="btn btn-secondary">Stay Updated</a>
+      <div class="hero-bg"></div>
+      <div class="hero-orb"></div>
+      <div class="container hero-inner">
+
+        <div class="hero-content">
+          <span class="hero-badge">App of the Day</span>
+          <h1>Visualize your <span>wellness</span>.</h1>
+          <p class="hero-sub">
+            Track steps, sleep, water, and mindfulness in one calm place.
+            Science-backed suggestions. AI-powered trends. Beautifully designed.
+          </p>
+
+          <!-- Email signup -->
+          <form class="hero-form" action="https://formspree.io/f/alex14manning@gmail.com" method="POST" id="email-form">
+            <input type="email" name="email" placeholder="Enter your email for updates" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <p class="hero-success" id="hero-success">Thanks for subscribing!</p>
+
+          <!-- App Store -->
+          <div class="hero-links">
+            <a href="https://apps.apple.com/us/app/lume-health-wellness/id6753306585" class="app-store-btn" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 16.56 2.93 11.3 4.7 7.72C5.57 5.94 7.36 4.86 9.28 4.84C10.56 4.81 11.78 5.72 12.56 5.72C13.34 5.72 14.83 4.62 16.39 4.8C17.07 4.83 18.94 5.09 20.13 6.82C20.04 6.88 17.64 8.27 17.67 11.16C17.71 14.61 20.68 15.7 20.72 15.72C20.69 15.79 20.24 17.37 19.12 18.99L18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
+              Download for iOS
+            </a>
+          </div>
+
+          <p class="hero-note">Free on iPhone &middot; Apple Watch, Oura, Garmin &amp; Whoop</p>
         </div>
-        <p class="hero-note">Free on iPhone &middot; Works with Apple Watch, Oura Ring, Garmin &amp; Whoop</p>
+
+        <!-- Phone mockup -->
+        <div class="hero-phone">
+          <div class="phone-mockup">
+            <div class="phone-glow"></div>
+            <div class="phone-frame">
+              <div class="phone-screen">
+                <img src="assets/screenshot-visualize.png" alt="Lume wellness dashboard" />
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- Screenshots -->
-    <section class="screenshots" id="screenshots">
+    <!-- ═══ SHOWCASE SECTIONS ═══ -->
+    <section id="showcase" style="padding-top: 40px;">
       <div class="container">
-        <div class="screenshots-header">
-          <h2>See Lume in action</h2>
+
+        <!-- 1. AI Trends -->
+        <div class="showcase-item">
+          <div class="showcase-text reveal-left">
+            <span class="section-label">AI-Powered</span>
+            <h3>View trends and highlights.</h3>
+            <p>
+              Lume uses AI to analyze your activity data and surface the trends that matter most.
+              See weekly comparisons, monthly patterns, and actionable insights at a glance.
+            </p>
+            <div class="showcase-tags">
+              <span class="showcase-tag">Weekly Trends</span>
+              <span class="showcase-tag">Monthly Charts</span>
+              <span class="showcase-tag">Smart Highlights</span>
+            </div>
+          </div>
+          <div class="showcase-visual reveal-right">
+            <div class="showcase-phone">
+              <img src="assets/screenshot-trends.png" alt="AI trends and highlights" />
+            </div>
+          </div>
         </div>
-        <div class="screenshots-track">
-          <div class="screenshot-item">
-            <img src="assets/screenshot-visualize.png" alt="Visualize your wellness dashboard" />
+
+        <!-- 2. Challenges -->
+        <div class="showcase-item">
+          <div class="showcase-text reveal-right">
+            <span class="section-label">Social</span>
+            <h3>Join challenges, add friends.</h3>
+            <p>
+              Create or join step, sleep, and mindfulness challenges with friends.
+              Track everyone's progress in one view and stay motivated together.
+            </p>
+            <div class="showcase-tags">
+              <span class="showcase-tag">Custom Challenges</span>
+              <span class="showcase-tag">Friend Tracking</span>
+              <span class="showcase-tag">Leaderboards</span>
+            </div>
           </div>
-          <div class="screenshot-item">
-            <img src="assets/screenshot-trends.png" alt="View AI trends and highlights" />
-          </div>
-          <div class="screenshot-item">
-            <img src="assets/screenshot-challenges.png" alt="Join challenges and add friends" />
-          </div>
-          <div class="screenshot-item">
-            <img src="assets/screenshot-habits.png" alt="Stay on track with habits" />
-          </div>
-          <div class="screenshot-item">
-            <img src="assets/screenshot-science.png" alt="Get science-backed suggestions" />
+          <div class="showcase-visual reveal-left">
+            <div class="showcase-phone">
+              <img src="assets/screenshot-challenges.png" alt="Challenges and friends" />
+            </div>
           </div>
         </div>
+
+        <!-- 3. Habits -->
+        <div class="showcase-item">
+          <div class="showcase-text reveal-left">
+            <span class="section-label">Habits</span>
+            <h3>Stay on track every day.</h3>
+            <p>
+              Build and maintain healthy habits with a visual 12-week history.
+              Track reading, meditation, exercise, and anything else that matters to you.
+            </p>
+            <div class="showcase-tags">
+              <span class="showcase-tag">Habit History</span>
+              <span class="showcase-tag">Streaks</span>
+              <span class="showcase-tag">Custom Habits</span>
+            </div>
+          </div>
+          <div class="showcase-visual reveal-right">
+            <div class="showcase-phone">
+              <img src="assets/screenshot-habits.png" alt="Habit tracking" />
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Science Backed -->
+        <div class="showcase-item">
+          <div class="showcase-text reveal-right">
+            <span class="section-label">Science-Backed</span>
+            <h3>Suggestions that actually help.</h3>
+            <p>
+              Get personalized suggestions based on your data and backed by research.
+              Lume connects with your devices to give you a complete picture of your health.
+            </p>
+            <div class="showcase-tags">
+              <span class="showcase-tag">HealthKit Sync</span>
+              <span class="showcase-tag">Smart Suggestions</span>
+              <span class="showcase-tag">Weather Aware</span>
+            </div>
+          </div>
+          <div class="showcase-visual reveal-left">
+            <div class="showcase-phone">
+              <img src="assets/screenshot-science.png" alt="Science-backed suggestions" />
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- Features -->
+    <!-- ═══ FEATURES GRID ═══ -->
     <section class="features" id="features">
       <div class="container">
-        <div class="features-header">
+        <div class="section-header reveal">
+          <span class="section-label">Features</span>
           <h2>Everything you need, nothing you don't.</h2>
-          <p>Lume replaces the jumble of single-purpose apps with one beautiful view of how you're really doing.</p>
+          <p>One beautiful app that replaces a dozen single-purpose trackers.</p>
         </div>
-        <div class="feature-grid">
+        <div class="feature-grid stagger">
           <article class="feature-card">
             <div class="feature-icon">&#x1F4CA;</div>
-            <h3>Visualize Your Day</h3>
-            <p>Steps, sleep, water, and mindfulness in clean, card-based screens that show exactly what matters.</p>
+            <h3>Wellness Dashboard</h3>
+            <p>Steps, sleep, water, and mindfulness in clean, card-based screens.</p>
           </article>
           <article class="feature-card">
             <div class="feature-icon">&#x2728;</div>
-            <h3>AI-Powered Insights</h3>
-            <p>Smart trends and highlights translate your data into simple, actionable suggestions backed by science.</p>
+            <h3>AI Insights</h3>
+            <p>Smart analysis that translates your data into actionable suggestions.</p>
           </article>
           <article class="feature-card">
             <div class="feature-icon">&#x1F91D;</div>
-            <h3>Challenges &amp; Friends</h3>
-            <p>Join step, hydration, and sleep challenges with friends. Track progress together and stay accountable.</p>
+            <h3>Challenges</h3>
+            <p>Compete with friends on steps, hydration, sleep, and more.</p>
           </article>
           <article class="feature-card">
             <div class="feature-icon">&#x2705;</div>
             <h3>Habit Tracking</h3>
-            <p>Build and maintain healthy habits with visual history, streaks, and gentle reminders to keep you on track.</p>
+            <p>Visual history, streaks, and gentle reminders to keep you going.</p>
           </article>
           <article class="feature-card">
-            <div class="feature-icon">&#x2328;&#xFE0F;</div>
-            <h3>Device Integrations</h3>
-            <p>Works with iPhone, Apple Watch, Oura Ring, Garmin Watch, and Whoop. No smartwatch required.</p>
+            <div class="feature-icon">&#x231A;</div>
+            <h3>Device Sync</h3>
+            <p>Apple Watch, Oura Ring, Garmin, Whoop. No watch required.</p>
           </article>
           <article class="feature-card">
             <div class="feature-icon">&#x1F3A8;</div>
             <h3>Beautiful Design</h3>
-            <p>A warm, minimal interface that feels inviting, not clinical. Your wellness should feel good to look at.</p>
+            <p>A warm, minimal interface that feels inviting, not clinical.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Email Signup -->
-    <section class="signup" id="signup">
-      <div class="container">
-        <div class="signup-inner">
-          <h2>Stay in the loop</h2>
-          <p>Get updates on new features, wellness tips, and exclusive content. No spam, ever.</p>
-          <form class="signup-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="email-form">
-            <input type="email" name="email" placeholder="Your email address" required />
-            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
-          </form>
-          <p class="signup-success" id="signup-success">Thanks for subscribing!</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
+    <!-- ═══ CTA ═══ -->
     <section class="cta">
+      <div class="cta-bg"></div>
       <div class="container">
-        <h2>Ready to feel better?</h2>
-        <p>Download Lume and start visualizing your wellness journey today.</p>
-        <a href="https://apps.apple.com/us/app/lume-health-wellness/id6753306585" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-          Download Free
-        </a>
+        <div class="cta-content reveal">
+          <h2>Ready to feel better?</h2>
+          <p>Download Lume and start visualizing your wellness journey today.</p>
+          <a href="https://apps.apple.com/us/app/lume-health-wellness/id6753306585" class="app-store-btn" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 16.56 2.93 11.3 4.7 7.72C5.57 5.94 7.36 4.86 9.28 4.84C10.56 4.81 11.78 5.72 12.56 5.72C13.34 5.72 14.83 4.62 16.39 4.8C17.07 4.83 18.94 5.09 20.13 6.82C20.04 6.88 17.64 8.27 17.67 11.16C17.71 14.61 20.68 15.7 20.72 15.72C20.69 15.79 20.24 17.37 19.12 18.99L18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
+            Download Free on the App Store
+          </a>
+        </div>
       </div>
     </section>
 
@@ -158,6 +244,32 @@
   </footer>
 
   <script>
+    // Scroll-triggered animations
+    const observerOptions = { threshold: 0.15, rootMargin: '0px 0px -40px 0px' };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .stagger').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Parallax on hero phone
+    const heroPhone = document.querySelector('.phone-mockup');
+    if (heroPhone && window.innerWidth > 900) {
+      window.addEventListener('mousemove', (e) => {
+        const x = (e.clientX / window.innerWidth - 0.5) * 12;
+        const y = (e.clientY / window.innerHeight - 0.5) * 12;
+        heroPhone.style.transform = `perspective(1000px) rotateY(${x}deg) rotateX(${-y}deg)`;
+      }, { passive: true });
+    }
+
+    // Email form
     const form = document.getElementById('email-form');
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -170,13 +282,22 @@
         });
         if (res.ok) {
           form.style.display = 'none';
-          document.getElementById('signup-success').classList.add('show');
+          document.getElementById('hero-success').classList.add('show');
         }
       } catch (err) {
-        // fallback: submit normally
         form.submit();
       }
     });
+
+    // Smooth header shadow on scroll
+    const header = document.querySelector('.site-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        header.style.boxShadow = '0 1px 12px rgba(0,0,0,0.06)';
+      } else {
+        header.style.boxShadow = 'none';
+      }
+    }, { passive: true });
   </script>
 
 </body>
