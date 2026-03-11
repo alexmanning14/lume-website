@@ -63,10 +63,12 @@
 
         <!-- Hero paired screenshots -->
         <div class="hero-phone">
-          <div class="hero-pair">
+          <div class="hero-pair-wrap">
             <div class="hero-pair-glow"></div>
-            <img src="assets/screenshot-visualize.png" alt="Lume — Visualize Your Wellness" />
-            <img src="assets/screenshot-science.png" alt="Lume — Science-Backed Suggestions" />
+            <div class="hero-pair">
+              <img src="assets/screenshot-visualize.png" alt="Lume — Visualize Your Wellness" />
+              <img src="assets/screenshot-science.png" alt="Lume — Science-Backed Suggestions" />
+            </div>
           </div>
         </div>
 
@@ -236,7 +238,7 @@
     });
 
     // Parallax on hero pair
-    const heroPair = document.querySelector('.hero-pair');
+    const heroPair = document.querySelector('.hero-pair-wrap');
     if (heroPair && window.innerWidth > 900) {
       window.addEventListener('mousemove', (e) => {
         const x = (e.clientX / window.innerWidth - 0.5) * 8;

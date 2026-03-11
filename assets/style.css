@@ -510,28 +510,27 @@ img { display: block; max-width: 100%; }
 }
 
 /* Hero paired screenshots (side by side) */
-.hero-pair {
+.hero-pair-wrap {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 0;
+  display: inline-block;
+  animation: float 6s ease-in-out infinite;
+  transition: transform 0.15s ease-out;
+}
+
+.hero-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 190px; /* each image ~95px wide, matching showcase phone scale */
   border-radius: 16px;
   overflow: hidden;
   box-shadow:
     0 24px 60px rgba(0,0,0,0.12),
     0 8px 20px rgba(0,0,0,0.08);
-  animation: float 6s ease-in-out infinite;
-  transition: transform 0.15s ease-out;
-  width: 380px;
-  max-width: 100%;
 }
 
 .hero-pair img {
-  flex: 0 0 50%;
-  width: 50%;
-  min-width: 0;
-  height: auto;
+  width: 100%;
+  height: 100%;
   display: block;
   object-fit: cover;
 }
@@ -902,7 +901,7 @@ section { padding: 100px 0; }
   .feature-grid { grid-template-columns: 1fr 1fr; }
   .phone-mockup { width: 200px; }
   .showcase-phone { width: 170px; }
-  .hero-pair { width: 340px; }
+  .hero-pair { width: 180px; }
 }
 
 @media (max-width: 640px) {
@@ -915,7 +914,7 @@ section { padding: 100px 0; }
   .hero-form button { width: 100%; }
   .phone-mockup { width: 180px; }
   .showcase-phone { width: 160px; }
-  .hero-pair { width: 280px; border-radius: 12px; }
+  .hero-pair { width: 160px; border-radius: 12px; }
   .footer-inner { flex-direction: column; gap: 12px; text-align: center; }
   .hero-links { flex-direction: column; align-items: center; }
 }
