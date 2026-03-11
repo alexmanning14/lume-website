@@ -205,11 +205,6 @@ img { display: block; max-width: 100%; }
   padding-top: 110px;
 }
 
-@media (max-width: 900px) {
-  .has-banner .hero {
-    padding-top: 200px;
-  }
-}
 
 /* ═══════════════════════════════
    HEADER
@@ -932,10 +927,13 @@ section { padding: 100px 0; }
     gap: 2px;
   }
   .hero {
-    padding-top: 120px;
+    padding-top: 150px !important;
+  }
+  .has-banner .hero {
+    padding-top: 200px !important;
   }
   .page-simple {
-    padding-top: 140px;
+    padding-top: 160px !important;
   }
   .hero-inner {
     grid-template-columns: 1fr;
