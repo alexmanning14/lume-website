@@ -2,204 +2,182 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Lume — Your Wellness, All In One Place</title>
-  <meta name="description" content="Lume helps you track steps, sleep, water, mindfulness, and more — with challenges and insights that make wellness feel simple.">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lume — Visualize Your Wellness</title>
+  <meta name="description" content="Lume helps you track steps, sleep, water, mindfulness, and more. Join challenges with friends, view AI trends, and build healthy habits. Download free on the App Store.">
+  <link rel="icon" href="assets/icon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/icon.png" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-<div class="page">
 
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#top" class="brand">
-        <div class="brand-mark"><img src="assets/genie.png" alt="Lume logo"></div>
-        <div class="brand-text">
-          <span class="brand-name">Lume</span>
-          <span class="brand-tagline">Your wellness, all in one place.</span>
-        </div>
+      <a href="/" class="brand">
+        <img src="assets/icon.png" alt="Lume" class="brand-icon" />
+        <span class="brand-name">Lume</span>
       </a>
-
       <nav class="nav">
         <a href="#features">Features</a>
-        <a href="#screens">Screens</a>
-        <a href="#challenges">Challenges</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="about.html">About</a>
         <a href="privacy.html">Privacy</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <main id="top">
-    <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <p class="eyebrow">Health & wellness app for iOS</p>
-          <h1>Your daily wellness, beautifully organized.</h1>
-          <p class="hero-sub">
-            Track steps, sleep, water, and mindfulness. Join friendly challenges with friends.
-            Lume makes feeling better a little more fun—and a lot more doable.
-          </p>
+  <main>
 
-          <div class="hero-ctas">
-            <!-- TODO: Replace # with your real App Store URL -->
-            <a href="https://apps.apple.com/us/app/lume-health-wellness/id6753306585" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-              Download on the App Store
-            </a>
-            <button type="button" class="btn btn-ghost" onclick="scrollToSection('features')">
-              See how Lume works
-            </button>
-          </div>
-
-          <div class="hero-note">
-            No smartwatch required • Built for iPhone • Warm, minimal design
-          </div>
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="container">
+        <span class="hero-badge">App of the Day</span>
+        <img src="assets/icon.png" alt="Lume app icon" class="hero-icon" />
+        <h1>Visualize your wellness.</h1>
+        <p class="hero-sub">
+          Track steps, sleep, water, and mindfulness in one calm place.
+          Science-backed suggestions. AI-powered trends. Beautiful design.
+        </p>
+        <div class="hero-ctas">
+          <a href="https://apps.apple.com/us/app/lume-health-wellness/id6753306585" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            Download on the App Store
+          </a>
+          <a href="#signup" class="btn btn-secondary">Stay Updated</a>
         </div>
+        <p class="hero-note">Free on iPhone &middot; Works with Apple Watch, Oura Ring, Garmin &amp; Whoop</p>
+      </div>
+    </section>
 
-        <div class="hero-visual" aria-hidden="true">
-          <div class="hero-strip">
-            <div class="hero-shot">
-              <img src="assets/hero-left.png" alt="">
-            </div>
-            <div class="hero-shot">
-              <img src="assets/hero-right.png" alt="">
-            </div>
+    <!-- Screenshots -->
+    <section class="screenshots" id="screenshots">
+      <div class="container">
+        <div class="screenshots-header">
+          <h2>See Lume in action</h2>
+        </div>
+        <div class="screenshots-track">
+          <div class="screenshot-item">
+            <img src="assets/screenshot-visualize.png" alt="Visualize your wellness dashboard" />
+          </div>
+          <div class="screenshot-item">
+            <img src="assets/screenshot-trends.png" alt="View AI trends and highlights" />
+          </div>
+          <div class="screenshot-item">
+            <img src="assets/screenshot-challenges.png" alt="Join challenges and add friends" />
+          </div>
+          <div class="screenshot-item">
+            <img src="assets/screenshot-habits.png" alt="Stay on track with habits" />
+          </div>
+          <div class="screenshot-item">
+            <img src="assets/screenshot-science.png" alt="Get science-backed suggestions" />
           </div>
         </div>
       </div>
     </section>
 
     <!-- Features -->
-    <section id="features" class="section section-light">
+    <section class="features" id="features">
       <div class="container">
-        <header class="section-header">
-          <p class="eyebrow">Why Lume</p>
-          <h2>Everything you care about, in one calm view.</h2>
-          <p class="section-sub">
-            Lume replaces the jumble of one-purpose apps with a single place to see how you’re really doing.
-          </p>
-        </header>
-
+        <div class="features-header">
+          <h2>Everything you need, nothing you don't.</h2>
+          <p>Lume replaces the jumble of single-purpose apps with one beautiful view of how you're really doing.</p>
+        </div>
         <div class="feature-grid">
           <article class="feature-card">
-            <div class="feature-icon">📊</div>
-            <h3>Track the essentials</h3>
-            <p>
-              Steps, sleep, water intake and more—Lume keeps the focus on the basics that move the needle.
-            </p>
+            <div class="feature-icon">&#x1F4CA;</div>
+            <h3>Visualize Your Day</h3>
+            <p>Steps, sleep, water, and mindfulness in clean, card-based screens that show exactly what matters.</p>
           </article>
-
           <article class="feature-card">
-            <div class="feature-icon">🤝</div>
-            <h3>Challenges with friends</h3>
-            <p>
-              Join step and hydration challenges, or create your own. Stay accountable together and celebrate wins.
-            </p>
+            <div class="feature-icon">&#x2728;</div>
+            <h3>AI-Powered Insights</h3>
+            <p>Smart trends and highlights translate your data into simple, actionable suggestions backed by science.</p>
           </article>
-
           <article class="feature-card">
-            <div class="feature-icon">✨</div>
-            <h3>AI-powered insights</h3>
-            <p>
-              Short, friendly summaries that highlight your patterns—so you know what’s working and what to adjust.
-            </p>
+            <div class="feature-icon">&#x1F91D;</div>
+            <h3>Challenges &amp; Friends</h3>
+            <p>Join step, hydration, and sleep challenges with friends. Track progress together and stay accountable.</p>
           </article>
-
           <article class="feature-card">
-            <div class="feature-icon">📱</div>
-            <h3>No watch necessary</h3>
-            <p>
-              Lume works great with just your iPhone. Add steps and water manually or sync from your devices.
-            </p>
+            <div class="feature-icon">&#x2705;</div>
+            <h3>Habit Tracking</h3>
+            <p>Build and maintain healthy habits with visual history, streaks, and gentle reminders to keep you on track.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">&#x2328;&#xFE0F;</div>
+            <h3>Device Integrations</h3>
+            <p>Works with iPhone, Apple Watch, Oura Ring, Garmin Watch, and Whoop. No smartwatch required.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">&#x1F3A8;</div>
+            <h3>Beautiful Design</h3>
+            <p>A warm, minimal interface that feels inviting, not clinical. Your wellness should feel good to look at.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Screens row -->
-    <section id="screens" class="section section-contrast">
+    <!-- Email Signup -->
+    <section class="signup" id="signup">
       <div class="container">
-        <header class="section-header section-header-center">
-          <p class="eyebrow">Inside the app</p>
-          <h2>See your day at a glance.</h2>
-          <p class="section-sub">
-            Clean, card-based screens show exactly what you need to know—without overwhelming charts.
-          </p>
-        </header>
-
-        <div class="screens-row">
-          <div class="screen-card">
-            <img src="assets/autotrack.png" alt="Auto-track your health with Lume">
-            <p class="screen-caption">Auto-track your daily activity and progress over time.</p>
-          </div>
-          <div class="screen-card">
-            <img src="assets/insights.png" alt="Get AI insights on your steps in Lume">
-            <p class="screen-caption">AI insights translate your movement into simple, human language.</p>
-          </div>
-          <div class="screen-card">
-            <img src="assets/challenges.png" alt="Join challenges and add friends in Lume">
-            <p class="screen-caption">Join challenges with friends and keep each other motivated.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Challenges -->
-    <section id="challenges" class="section section-soft">
-      <div class="container split">
-        <div class="split-text">
-          <p class="eyebrow">Challenges & community</p>
-          <h2>Wellness sticks better with friends.</h2>
-          <p>
-            Invite your favorite people to step more, sip more water, or rest a little better.
-            Lume makes it easy to spin up friendly challenges and track progress together.
-          </p>
-          <ul class="bullet-list">
-            <li>Create custom step or hydration challenges.</li>
-            <li>See everyone’s progress in one simple view.</li>
-            <li>Cheer each other on and keep streaks going.</li>
-          </ul>
-        </div>
-
-        <div class="split-visual" aria-hidden="true">
-          <img src="assets/challenges.png" alt="">
+        <div class="signup-inner">
+          <h2>Stay in the loop</h2>
+          <p>Get updates on new features, wellness tips, and exclusive content. No spam, ever.</p>
+          <form class="signup-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="email-form">
+            <input type="email" name="email" placeholder="Your email address" required />
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+          <p class="signup-success" id="signup-success">Thanks for subscribing!</p>
         </div>
       </div>
     </section>
 
     <!-- CTA -->
-    <section class="section section-cta">
-      <div class="container cta-inner">
-        <div>
-          <h2>Ready to make wellness feel lighter?</h2>
-          <p>
-            Download Lume and start tracking your steps, sleep, and water in a space that feels warm—not clinical.
-          </p>
-        </div>
-        <!-- TODO: Replace # with real App Store URL -->
-        <a href="https://apps.apple.com/us/app/lume-health-wellness/id6753306585" class="btn btn-primary btn-cta" target="_blank" rel="noopener noreferrer">
-          Download on the App Store
+    <section class="cta">
+      <div class="container">
+        <h2>Ready to feel better?</h2>
+        <p>Download Lume and start visualizing your wellness journey today.</p>
+        <a href="https://apps.apple.com/us/app/lume-health-wellness/id6753306585" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Download Free
         </a>
       </div>
     </section>
+
   </main>
 
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <span>© 2025 Lume</span>
-      <a href="privacy.html">Privacy</a>
+      <span>&copy; 2025 Lume</span>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="https://apps.apple.com/us/app/lume-health-wellness/id6753306585" target="_blank" rel="noopener noreferrer">App Store</a>
+      </div>
     </div>
   </footer>
-</div>
 
-<script>
-  function scrollToSection(id) {
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-  }
-</script>
+  <script>
+    const form = document.getElementById('email-form');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          form.style.display = 'none';
+          document.getElementById('signup-success').classList.add('show');
+        }
+      } catch (err) {
+        // fallback: submit normally
+        form.submit();
+      }
+    });
+  </script>
+
 </body>
 </html>
